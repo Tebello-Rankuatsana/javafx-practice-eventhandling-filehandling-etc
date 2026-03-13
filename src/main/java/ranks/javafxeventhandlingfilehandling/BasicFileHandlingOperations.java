@@ -18,6 +18,12 @@ public class BasicFileHandlingOperations {
     private TextField txtName;
 
     @FXML
+    private Button btnLoad;
+
+    @FXML
+    private TextField txtLoad;
+
+    @FXML
     void saveName(ActionEvent event) {
         try{
             FileWriter fw = new FileWriter("names.txt",true);
