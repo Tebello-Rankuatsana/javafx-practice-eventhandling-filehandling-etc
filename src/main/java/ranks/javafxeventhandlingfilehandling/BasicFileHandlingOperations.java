@@ -21,7 +21,7 @@ public class BasicFileHandlingOperations {
     void saveName(ActionEvent event) {
         try{
             FileWriter fw = new FileWriter("names.txt",true);
-            fw.write(txtName.getText());
+            fw.write(txtName.getText()+"\n");
             fw.close();
         }catch(IOException e){
             e.printStackTrace();
