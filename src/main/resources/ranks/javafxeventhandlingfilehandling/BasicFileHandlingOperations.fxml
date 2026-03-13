@@ -8,6 +8,6 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ranks.javafxeventhandlingfilehandling.BasicFileHandlingOperations">
    <children>
       <TextField fx:id="txtName" layoutX="89.0" layoutY="34.0" onAction="#saveName" prefHeight="62.0" prefWidth="419.0" promptText="Name" />
-      <Button fx:id="btnEnter" layoutX="278.0" layoutY="123.0" mnemonicParsing="false" text="Save" />
+      <Button fx:id="btnEnter" layoutX="278.0" layoutY="123.0" mnemonicParsing="false" onAction="#saveName" text="Save" />
    </children>
 </AnchorPane>
