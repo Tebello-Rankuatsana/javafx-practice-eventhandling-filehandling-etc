@@ -3,10 +3,17 @@ package ranks.javafxeventhandlingfilehandling;
 public class ExceptionHandlingPractice{
     public static void main(String[] args) {
         try{
-            int result = 5/0;
-        }catch(MathematicalException e) {
-            e.printStackTrace();
+            int x = 5;
+            int y = 0;
+            if(y == 0){
+                throw new MathematicalException("Invalid operation");
+            }
+            int result = x/y;
+        } catch (MathematicalException e) {
+            throw new RuntimeException(e);
         }
+
+
     }
 
 }
