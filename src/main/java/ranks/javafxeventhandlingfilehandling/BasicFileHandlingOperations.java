@@ -34,4 +34,9 @@ public class BasicFileHandlingOperations {
         }
     }
 
+    @FXML
+    void loadNames(ActionEvent event) {
+
+    }
+
 }
