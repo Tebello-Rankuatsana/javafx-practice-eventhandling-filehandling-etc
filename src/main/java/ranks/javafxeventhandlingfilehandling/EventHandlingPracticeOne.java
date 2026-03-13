@@ -49,6 +49,12 @@ public class EventHandlingPracticeOne {
     private RadioButton rbWater;
 
     @FXML
+    private ComboBox<String> cbLocation;
+
+    @FXML
+    private Label lblLocation;
+
+    @FXML
     void handleGreet(ActionEvent event) {
         String name = txtName.getText();
         lblMessage.setText("Hello "+name+"!");
@@ -89,5 +95,19 @@ public class EventHandlingPracticeOne {
             lblOutput.setText("Water selected");
     }
 
+    @FXML
+    void initialize(){
+
+//        adding items for combo box
+        cbLocation.getItems().addAll(
+            "Maseru",
+            "Mafetang",
+            "Mohales Hoek");
+    }
+    @FXML
+    void showLocation(ActionEvent event) {
+        String location = cbLocation.getValue();
+        lblLocation.setText(location);
+    }
 
 }
