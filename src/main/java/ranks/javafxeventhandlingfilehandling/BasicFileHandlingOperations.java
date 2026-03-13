@@ -5,9 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class BasicFileHandlingOperations {
 
@@ -36,7 +34,16 @@ public class BasicFileHandlingOperations {
 
     @FXML
     void loadNames(ActionEvent event) {
-
+        try{
+            BufferedReader br = new BufferedReader(new FileReader("names.txt"));
+            String line;
+            while((line = br.readLine()) != null){
+                txtLoad.appendText(line+"\n");
+            }
+            br.close();
+        }catch(IOException e){
+            e.printStackTrace();
+        }
     }
 
 }
