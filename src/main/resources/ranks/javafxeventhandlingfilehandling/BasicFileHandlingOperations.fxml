@@ -9,5 +9,7 @@
    <children>
       <TextField fx:id="txtName" layoutX="89.0" layoutY="34.0" onAction="#saveName" prefHeight="62.0" prefWidth="419.0" promptText="Name" />
       <Button fx:id="btnEnter" layoutX="278.0" layoutY="123.0" mnemonicParsing="false" onAction="#saveName" text="Save" />
+      <TextField fx:id="txtLoad" layoutX="101.0" layoutY="295.0" onAction="#saveName" prefHeight="62.0" prefWidth="419.0" promptText="Loaded Data" />
+      <Button fx:id="btnLoad" layoutX="280.0" layoutY="233.0" mnemonicParsing="false" onAction="#loadNames" text="Load" />
    </children>
 </AnchorPane>
