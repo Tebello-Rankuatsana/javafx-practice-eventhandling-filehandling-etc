@@ -38,7 +38,7 @@ public class BasicFileHandlingOperations {
             BufferedReader br = new BufferedReader(new FileReader("names.txt"));
             String line;
             while((line = br.readLine()) != null){
-                txtLoad.appendText(line+"\n");
+                txtLoad.appendText(line+"\n"+"---");
             }
             br.close();
         }catch(IOException e){
