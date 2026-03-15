@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.FileChooser;
 
 import java.io.*;
 
@@ -45,5 +46,13 @@ public class BasicFileHandlingOperations {
             e.printStackTrace();
         }
     }
+
+//    @FXML
+//    void LoadFile(ActionEvent event){
+//
+//        FileChooser fw = new FileChooser();
+//        File file = fw.showSaveDialog();
+//
+//    }
 
 }
